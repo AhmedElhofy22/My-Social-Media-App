@@ -1,0 +1,31 @@
+.post {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #23014a;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    animation: animate-in 1s ease-out forwards;
+  }
+  
+  .title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #47adec;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .body {
+    white-space: pre-wrap;
+    font-size: 1.25rem;
+    margin: 0.25rem 0 0 0;
+    color: #1DA1F2;
+    font-style: italic;
+  }
+
+  .img {
+    width: 280px;
+    padding-left: 500px;
+    margin-top: -10px;
+    
+  }

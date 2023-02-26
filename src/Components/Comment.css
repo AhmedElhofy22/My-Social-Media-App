@@ -1,0 +1,37 @@
+.user-img {
+    
+    left: 0;
+    width: 65px;
+    object-fit: contain;
+    padding-left: 10px;
+    margin-top: -15px;
+}
+
+.name{
+    color: #1DA1F2;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.email {
+    color: gray;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.comment {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #23014a;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    animation: animate-in 1s ease-out forwards;
+}
+
+.body-comment {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #47adec;
+    margin: 0;
+    text-transform: uppercase;
+}
