@@ -4,7 +4,7 @@ import "./index.css";
 import Home from "./Pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import PopupContextProvider from "./Store/PopupContext";
+
 import RootLayout from "./Pages/Root";
 import PostDetail from "./Pages/PostDetail"
 import ErrorPage from "./Pages/ErrorPage"
@@ -30,9 +30,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   <PopupContextProvider>
+   
     <RouterProvider router={router} />
-    </PopupContextProvider>
+    
   </React.StrictMode>
 );
 
