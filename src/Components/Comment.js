@@ -5,9 +5,7 @@ import './Comment.css'
 const Comment = (props) => {
   return (
     <div>
-      
       <li className='comment'>
-      
       <img src={UserImg} alt='user-img' className='user-img'>{props.img}</img>
        <p>{props.userId}</p>
         <p className='name'>{props.name}</p>

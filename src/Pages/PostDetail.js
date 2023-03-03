@@ -23,12 +23,7 @@ const PostDetail = () => {
                     throw new Error('Something went wrong')
                 }
         const responseData = await response.json()
-        
-        
-       
         setPost(responseData)
-        
-    
             }
        
         catch(error){
@@ -46,8 +41,6 @@ const PostDetail = () => {
               }
      
       const responseCommentData = await responseComment.json()
-      
-     
       
       setComments(responseCommentData)
   

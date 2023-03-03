@@ -9,17 +9,11 @@ const Header = (props) => {
   const setIsVisible = ()=>setPopup(v=>!v)
   return (
     <div className='header'>
-    
         <img className='header-logo' src={Logo} alt='logo-img'/>
-
-
-
-        
         <h1 className='header-title'>Twitter</h1>
         <button  type='button' onClick={setIsVisible} className='header-btn' >Post</button>
       {popup? <AddPost onClose={()=>setPopup(false)}/> :null}
     </div>
-    
   )
 }
 

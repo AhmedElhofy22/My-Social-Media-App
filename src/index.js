@@ -22,8 +22,6 @@ const router = createBrowserRouter([
       {  path: "post", element: <Posts /> },
       {  path: "post/:id", element: <PostDetail/>  },
       {  path: "/:id", element: <PostDetail/>  },
-        
-      
     ],
   },
 ]);
@@ -31,9 +29,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   
     <RouterProvider router={router} />
-    
   </React.StrictMode>
 );
 

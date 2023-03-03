@@ -3,12 +3,7 @@ import "./AddPost.css";
 import { useState } from "react";
 import PopUp from "./PopUp";
 import { useNavigate } from "react-router-dom";
-
-
-
 const AddPost = ({onClose}) => {
-  
- 
   const closeHandler=()=>{
     onClose()
   }
@@ -71,7 +66,6 @@ const AddPost = ({onClose}) => {
         </div>
         <div className="actions">
           <button  type="button" onClick={closeHandler}>
-          
             Cancel
           </button>
           <button  >
