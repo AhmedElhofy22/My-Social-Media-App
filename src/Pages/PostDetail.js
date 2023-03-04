@@ -5,9 +5,7 @@ import { useState,useEffect } from 'react'
 import Comment from '../Components/Comment'
 
 const PostDetail = () => {
- 
   const params =useParams()
-  console.log(params)
   const[post,setPost]=useState([])
   const[comments,setComments]=useState([])
   const[commentLoading,setCommentLoading]=useState(false)
@@ -18,14 +16,12 @@ const PostDetail = () => {
             setLoading(true)
             try {
                 const response = await  fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
-                
                 if(!response.ok){
                     throw new Error('Something went wrong')
                 }
         const responseData = await response.json()
         setPost(responseData)
             }
-       
         catch(error){
           setError(error.message)
         }
@@ -34,18 +30,13 @@ const PostDetail = () => {
         const fetchPostDetailComments=async()=>{
           setCommentLoading(true)
           try {
-             
               const responseComment = await  fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}/comments`);
               if(!responseComment.ok){
                   throw new Error('Something went wrong')
               }
-     
       const responseCommentData = await responseComment.json()
-      
       setComments(responseCommentData)
-  
           }
-     
       catch(error){
         setError(error.message)
       }

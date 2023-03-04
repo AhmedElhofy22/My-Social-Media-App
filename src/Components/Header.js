@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import Logo from '../Images/logo.twitter.png'
 import './Header.css'
-
 import AddPost from './AddPost'
 
-const Header = (props) => {
+const Header = () => {
   const [popup , setPopup] = useState(false)
   const setIsVisible = ()=>setPopup(v=>!v)
   return (

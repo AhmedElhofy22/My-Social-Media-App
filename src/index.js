@@ -4,13 +4,10 @@ import "./index.css";
 import Home from "./Pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import RootLayout from "./Pages/Root";
 import PostDetail from "./Pages/PostDetail"
 import ErrorPage from "./Pages/ErrorPage"
 import Posts from "./Pages/Posts";
-
-
 
 const router = createBrowserRouter([
   {

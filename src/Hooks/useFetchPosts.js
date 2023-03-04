@@ -1,4 +1,3 @@
-
 import { useState,useEffect } from 'react'
 
 const useFetchPosts = () => {
@@ -15,9 +14,7 @@ const useFetchPosts = () => {
                 }
         const responseData = await response.json()
         setPosts(responseData)
-    
             }
-       
         catch(error){
           setError(error.message)
         }
